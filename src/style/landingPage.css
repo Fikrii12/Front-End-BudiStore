@@ -1,0 +1,61 @@
+.mybg-home{
+     height: auto;
+     background: white;
+}
+.mybg{
+     height: auto;
+     background: white;
+}
+.judul{
+     
+     height: 200px;
+     display: flex;
+     justify-content: end;
+     align-items: end;
+}
+
+.title{
+     font-size: 3rem;
+     font-weight: 800;
+     letter-spacing: 4px;
+}
+
+.boxMusik{
+     margin-bottom: 20px;
+}
+
+.cari-barang{
+     height: 150px;
+}
+
+.deks-tentang{
+     background: rgba(14, 48, 110, 0.6);
+     border-radius: 8px;
+     width: 65%;
+     padding: 20px;
+     font-size: 22px;
+     text-align: justify;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     -ms-border-radius: 8px;
+     -o-border-radius: 8px;
+}
+.kotak-pesan{
+     width: 500px;
+     background: rgba(14, 48, 110, 0.6);
+     padding: 20px;
+     border-radius: 8px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     -ms-border-radius: 8px;
+     -o-border-radius: 8px;
+}
+
+.tombol-pesan{
+     margin-right: 100px;
+}
+
+footer{
+     background-color: rgb(71, 69, 69);
+}
+
