@@ -9,10 +9,9 @@ const NavigasiBar = () => {
         <Container className="text-black">
           <Navbar.Brand>BudiStore</Navbar.Brand>
           <Nav>
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/tentang">About</Nav.Link>
-            <Nav.Link as={Link} to="/kontak">Contact</Nav.Link>
-            <Nav.Link as={Link} to="/admin">Admin</Nav.Link>
+            <Nav.Link as={Link} to="/Tambah">Add Data</Nav.Link>
+            <Nav.Link as={Link} to="/Hapus">Delete</Nav.Link>
+            <Nav.Link as={Link} to="/kontak">Update</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

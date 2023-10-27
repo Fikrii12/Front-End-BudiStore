@@ -3,7 +3,7 @@ import { Col, Row, Button, Form, Card } from "react-bootstrap";
 import "../style/landingPage.css";
 import axios from "axios";
 
-const Content = () => {
+const ContentAdmin = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -48,7 +48,6 @@ const Content = () => {
             <Card.Body>
               <Card.Title className="text-white">{product[1]}</Card.Title>
               <Card.Text className="text-white">Harga: {product[3]}</Card.Text>
-              <Button variant="primary">BUY</Button>
             </Card.Body>
           </Card>
         ))}
@@ -58,4 +57,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default ContentAdmin;
