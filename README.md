@@ -40,6 +40,18 @@ npm install
 
 Perintah ini akan mengunduh dan menginstal semua pustaka atau modul yang diperlukan oleh proyek ini.
 
+### Menjalankan Aplikasi
+
+Menjalankan Aplikasi:
+
+```bash
+npm start
+```
+
+Aplikasi akan dijalankan pada server lokal dan dapat diakses melalui browser Anda di http://localhost:3000.
+
+Halaman akan secara otomatis dimuat ulang setiap kali Anda melakukan perubahan pada kode. Jika terjadi kesalahan terkait aturan penulisan kode (lint), informasi lebih lanjut akan ditampilkan di konsol.
+
 
 
 
