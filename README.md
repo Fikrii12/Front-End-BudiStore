@@ -36,6 +36,9 @@ Sebelum memulai pengembangan atau pengujian, pastikan Anda telah menginstal semu
 
 ```bash
 npm install
+```
+
+Perintah ini akan mengunduh dan menginstal semua pustaka atau modul yang diperlukan oleh proyek ini.
 
 
 
