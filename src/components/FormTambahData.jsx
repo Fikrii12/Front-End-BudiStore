@@ -40,6 +40,7 @@ const FormTambahData = () => {
       .catch((error) => {
         console.error("Error:", error);
       });
+
   };
 
   return (

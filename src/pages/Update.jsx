@@ -1,17 +1,17 @@
-import ContentAdmin from "../components/ContentAdmin";
 import Footer from "../components/Footer";
 import NavigasiBarAdmin from "../components/NavigasiBarAdmin";
+import UpdateData from "../components/UpdateData"
 
-const Admin = () =>{
+const Update = () =>{
      return(
-          <div className="mybg-home">
+          <div>
                <NavigasiBarAdmin />
-               <ContentAdmin />
+               <UpdateData />
+               <br></br>
                <br></br>
                <Footer />
           </div>
-
      )
 }
 
-export default Admin;
+export default Update;

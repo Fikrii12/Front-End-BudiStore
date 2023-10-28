@@ -2,9 +2,36 @@ import React, { useState, useEffect } from "react";
 import { Col, Row, Button, Form, Card } from "react-bootstrap";
 import "../style/landingPage.css";
 import axios from "axios";
+import KeranjangBelanja from "./Keranjang";
 
-const Content = () => {
+const ContentAdmin = () => {
   const [data, setData] = useState([]);
+  const [cart, setCart] = useState([]);
+  const [productCounts, setProductCounts] = useState({});
+
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+
+    setProductCounts((prevCounts) => ({
+      ...prevCounts,
+      [product.id]: (prevCounts[product.id] || 0) + 1,
+    }));
+  };
+
+  const removeFromCart = (productId) => {
+    setCart(cart.filter((product) => product.id !== productId));
+
+    setProductCounts((prevCounts) => ({
+      ...prevCounts,
+      [productId]: (prevCounts[productId] || 0) - 1,
+    }));
+  };
+
+  const buyAllProducts = () => {
+    alert("Produk berhasil dibeli!");
+    setCart([]);
+    setProductCounts({});
+  };
 
   useEffect(() => {
     axios
@@ -48,14 +75,23 @@ const Content = () => {
             <Card.Body>
               <Card.Title className="text-white">{product[1]}</Card.Title>
               <Card.Text className="text-white">Harga: {product[3]}</Card.Text>
-              <Button variant="primary">BUY</Button>
+              <Button variant="primary" onClick={() => addToCart({ id: product[0], name: product[1], price: product[3] })}>
+                Buy
+              </Button>
             </Card.Body>
           </Card>
         ))}
         <br></br>
       </div>
+
+      <KeranjangBelanja
+        cart={cart}
+        removeFromCart={removeFromCart}
+        buyAllProducts={buyAllProducts}
+        productCounts={productCounts}
+      />
     </div>
   );
 };
 
-export default Content;
+export default ContentAdmin;

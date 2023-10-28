@@ -2,13 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import NavigasiBar from "../components/NavigasiBar";
 import "../style/landingPage.css";
+import Footer from "../components/Footer";
 
 const Tentang = () => {
   return (
     <div className="mybg">
       <NavigasiBar />
       <div className="judul">
-        <Container className="text-white d-flex justify-content-center align-item-center">
+        <Container className="text-black d-flex justify-content-center align-item-center">
           <Row>
             <Col>
               <div className="title">ABOUT</div>
@@ -43,6 +44,8 @@ const Tentang = () => {
         </div>
       </div>
       <br></br>
+      <br></br>
+      <Footer />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../style/landingPage.css";
 import NavigasiBar from "../components/NavigasiBar";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import Footer from "../components/Footer";
 
 
 const Kontak = () => {
@@ -22,7 +23,7 @@ const Kontak = () => {
     <div className="mybg">
       <NavigasiBar />
       <div className="judul">
-        <Container className="text-white d-flex justify-content-center align-item-center">
+        <Container className="text-black d-flex justify-content-center align-item-center">
           <Row>
             <Col>
               <div className="title">KONTAK</div>
@@ -74,7 +75,7 @@ const Kontak = () => {
       </div>
       <br></br>
       <br></br>
-      <br></br>
+      <Footer />
     </div>
   );
 };

@@ -6,10 +6,11 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="mybg-home">
+    <div className="mybg">
       <NavigasiBar />
       <Intro />
       <Content />
+      <br></br>
       <Footer />
     </div>
   );

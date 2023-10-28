@@ -7,9 +7,10 @@ import Footer from "../components/Footer";
 
 const Hapus = () => {
   return(
-    <div>
+    <div className="mybg-home">
       <NavigasiBarAdmin />
       <HapusData />
+      <br></br>
       <Footer />
     </div>
   )

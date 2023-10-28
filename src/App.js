@@ -6,6 +6,7 @@ import Kontak from './pages/kontak';
 import Tambah from './pages/Tambah';
 import Hapus from './pages/Hapus';
 import Admin from './pages/Admin';
+import Update from './pages/Update';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route  path='/Tambah' element={<Tambah />}></Route>
         <Route path='/Hapus' element={<Hapus />}></Route>
         <Route path='/Admin' element={<Admin />}></Route>
+        <Route path='/Update' element={<Update />}></Route>
       </Routes>
     </Router>
   );
