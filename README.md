@@ -17,13 +17,16 @@ Website ini merupakan hasil dari proyek tugas individu 3 yang menggunakan React 
 - Komponen "Form" memungkinkan pengguna untuk memasukkan alamat email, nama, dan pesan mereka.
 - Data yang dimasukkan akan ditangani dengan menggunakan React Hooks, dan penggunaan `useState` memungkinkan pengiriman formulir dan pengelolaan data.
 
+### Admin
+Halaman ini digunakan untik menambah data, menghapus data, dan mengedit data.
+
 ## Pengelolaan State
 
 Website ini menerapkan konsep pengelolaan state sederhana menggunakan React Hooks. `useState` digunakan untuk mengelola data pesan yang dikirim melalui formulir.
 
 ## API
 
-Website ini menggunakan Fake Store API yang dimana didalam API tersebut terdapat data-data produk seperti baju, celana, jaket, dan lainnya. Pada API tersebut terdapat atribut dari produk yang ada yaitu terdiri dari nama produk, deksripsi produk, dan gambar produk
+Website ini menggunakan Fake Store API dari pyramid yang dapat anda gunakan pada link GitHub berikut : https://github.com/Fikrii12/Back-End-BudiStore.git
 
 ### `npm start`
 
